@@ -31,6 +31,7 @@ body {
             rgb(var(--background-end-rgb))
         )
         rgb(var(--background-start-rgb));
+    padding: 0 120px;
 }
 
 header {
@@ -102,13 +103,6 @@ p {
     color: var(--color-yellow);
 }
 
-.home::after {
-    width: 831px;
-    height: 403px;
-    flex-shrink: 0;
-    fill: #d8871c;
-    filter: blur(197.5px);
-}
 .home__main {
     display: flex;
     align-items: center;
@@ -130,13 +124,18 @@ p {
     height: 100%;
     z-index: -1;
 }
-.home__marquee {
+.home__marquee{
+  position: relative;
+  right: 120px;
+  width: calc(100% + 240px) !important;
+}
+.home__marquee_text {
     font-size: 150px;
     color: var(--color-bordo);
 }
-.home__update {
+/* .home__update, .blog {
     padding: 0 120px;
-}
+} */
 .home__update_info {
     display: flex;
     align-items: center;
@@ -173,4 +172,26 @@ p {
 .about__team_img {
     width: 90%;
     height: 80%;
+}
+
+.blog__title_block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.blog__title_img {
+    position: absolute;
+    top: 100px;
+}
+.blog__title_text {
+}
+.blog__post_item {
+    display: flex;
+    align-items: center;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
 }

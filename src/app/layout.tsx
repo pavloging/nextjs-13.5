@@ -19,6 +19,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={font.className}>
+            {/* <audio controls autoPlay={true}>
+                <source src="/sound.mp3" type="audio/mpeg" />
+            </audio> */}
                 <TheHeader />
                 <main>{children}</main>
                 <TheFooter />

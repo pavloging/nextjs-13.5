@@ -24,8 +24,8 @@ export default function Home() {
                     </span>
                 </h1>
             </div>
-            <Marquee>
-                <span className="home__marquee">HURRY POTTER</span>
+            <Marquee className="home__marquee">
+                <span className="home__marquee_text">HURRY POTTER</span>
             </Marquee>
             <div className="home__update">
                 <div className="home__update_title">

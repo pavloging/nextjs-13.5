@@ -31,8 +31,8 @@ export async function generateMetadata({
 export default async function Post({ params: { id } }: Props) {
     const post = await getData(id)
     return (
-        <>
+        <div className="post">
             <h1>Post page: {id}</h1> <h2>Title: {post.title}</h2> <p>Description: {post.body}</p>
-        </>
+        </div>
     );
 }
