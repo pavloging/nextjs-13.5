@@ -7,15 +7,9 @@ export default function AboutLayout({
 }) {
     return (
         <div>
-            <h1>About us</h1>
-            <ul>
-                <li>
-                    <Link href="/about/contacts">Contacts</Link>
-                </li>
-                <li>
-                    <Link href="/about/team">Team</Link>
-                </li>
-            </ul>
+            <h1 className="home__title about__layout_title">
+                A<span className="bordo_letter">b</span>o<span className="bordo_letter">u</span>t <span className="bordo_letter">U</span>s
+            </h1>
             {children}
         </div>
     );

@@ -1,7 +1,7 @@
 const TheFooter = () => {
   return (
     <footer>
-        Created by &copy;Pavloging
+        <p>Created by &copy; Belkova Maria & Pavloging</p>
     </footer>
   )
 }

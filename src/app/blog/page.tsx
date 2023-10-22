@@ -18,10 +18,11 @@ export const metadata: Metadata = {
 
 export default async function Blog() {
     const posts = await getData();
-    console.log(posts);
     return (
         <>
-            <h1>Blog page</h1>
+            <h1 className="home__title">
+                Bl<span className="bordo_letter">o</span>g
+            </h1>
             <ul>
                 {posts.map((post: any) => (
                     <li key={post.id}>
