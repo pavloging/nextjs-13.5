@@ -1,6 +1,11 @@
-import Link from 'next/link';
+'use client'
+
 import Image from 'next/image';
+// @ts-ignore
+import useSound from 'use-sound';
+
 export default function Team() {
+    const [play] = useSound('/designer.mp3');
     return (
         <div className="team page">
             <h1 className="home__title about__layout_title">
@@ -22,6 +27,8 @@ export default function Team() {
                 <div className="team__designer">
                     <div className='team__people_block'>
                     <Image
+                        className='team__img_pointer'
+                        onClick={play}
                         width={350}
                         height={350}
                         src="/ghost.svg"

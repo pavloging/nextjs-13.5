@@ -1,6 +1,12 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
+// @ts-ignore
+import useSound from 'use-sound';
+
 export default function Contacts() {
+    const [play] = useSound('/pumpkin.mp3');
     return (
         <div className="contacts page">
             <h1 className="home__title about__layout_title">
@@ -24,6 +30,7 @@ export default function Contacts() {
             </div>
             <div className='contacts__bottom_block'>
             <Image
+                onClick={play}
                 className="contacts__bottom_img"
                 width={346}
                 height={316}

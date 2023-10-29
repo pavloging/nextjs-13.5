@@ -260,6 +260,9 @@ p {
     display: flex;
     justify-content: center;
 }
+.contacts__bottom_img{
+    cursor: pointer;
+}
 
 .team__programmer{
     display: flex;
@@ -272,4 +275,7 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.team__img_pointer{
+    cursor: pointer;
 }
