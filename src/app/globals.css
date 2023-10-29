@@ -24,13 +24,15 @@
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
+    /* color: rgb(var(--foreground-rgb));
     background: linear-gradient(
             to bottom,
             transparent,
             rgb(var(--background-end-rgb))
         )
-        rgb(var(--background-start-rgb));
+        rgb(var(--background-start-rgb)); */
+    color: var(--color-white);
+    background-color: black;
     padding: 0 120px;
 }
 
@@ -112,7 +114,7 @@ p {
     z-index: -1;
 } */
 
-.shadow_red{
+.shadow_red {
     background-color: var(--color-bordo);
     width: 40%;
     height: 50%;
@@ -127,7 +129,7 @@ p {
     filter: blur(200px) brightness(0.9);
 }
 
-.shadow_orange{
+.shadow_orange {
     background-color: var(--color-yellow);
     width: 40%;
     margin-top: 20%;
@@ -163,10 +165,10 @@ p {
     height: 100%;
     z-index: -1;
 }
-.home__marquee{
-  position: relative;
-  right: 120px;
-  width: calc(100% + 240px) !important;
+.home__marquee {
+    position: relative;
+    right: 120px;
+    width: calc(100% + 240px) !important;
 }
 .home__marquee_text {
     font-size: 150px;
@@ -183,6 +185,9 @@ p {
 }
 .home__update_info-text p {
     margin-bottom: 8px;
+}
+.home__update_title{
+    margin-top: 30px;
 }
 .home__update_mini-title {
     font-size: xxx-large;
@@ -244,38 +249,38 @@ p {
     height: 70vh;
 }
 
-.contacts__links{
+.contacts__links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 160px 0;
 }
-.contacts__link p{
+.contacts__link p {
     color: var(--color-yellow);
 }
-.contacts__link_span{
+.contacts__link_span {
     color: var(--color-white);
 }
-.contacts__bottom_block{
+.contacts__bottom_block {
     display: flex;
     justify-content: center;
 }
-.contacts__bottom_img{
+.contacts__bottom_img {
     cursor: pointer;
 }
 
-.team__programmer{
+.team__programmer {
     display: flex;
     justify-content: flex-end;
 }
-.team__designer{
+.team__designer {
     display: flex;
 }
-.team__people_block{
+.team__people_block {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.team__img_pointer{
+.team__img_pointer {
     cursor: pointer;
 }
