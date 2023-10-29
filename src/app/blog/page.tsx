@@ -20,10 +20,10 @@ export const metadata: Metadata = {
 export default async function Blog() {
     const posts = await getData();
     return (
-        <div className="blog">
+        <div className="blog page">
             <div className="blog__title_block">
                 <Image
-                className="blog__title_img"
+                    className="blog__title_img"
                     width={450}
                     height={280}
                     src="/eyes.svg"

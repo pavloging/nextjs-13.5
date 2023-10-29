@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function About() {
     return (
-        <div className="about">
+        <div className="about page">
             <div className="about__contacts">
                 <Link className="about__contacts_link" href="/about/contacts">
                     <Image

@@ -47,7 +47,7 @@ header a {
 
 main {
     /* padding:  0 40px; */
-    min-height: calc(100vh - 200px);
+    /* min-height: calc(100vh - 200px); */
 }
 
 footer {
@@ -101,6 +101,51 @@ p {
 }
 .yellow_letter {
     color: var(--color-yellow);
+}
+
+/* .page::before{
+    content: url('/shadow-red.svg');
+    position: absolute;
+    top: -200px;
+    left: 0;
+    z-index: -1;
+}
+.page::after{
+    content: url('/shadow-orange.svg');
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+} */
+
+.shadow_red{
+    background-color: var(--color-bordo);
+    width: 40%;
+    height: 50%;
+    margin-top: 5%;
+    position: absolute;
+    background-position-x: right;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 20% 0 0 40%;
+    filter: blur(200px) brightness(0.9);
+}
+
+.shadow_orange{
+    background-color: var(--color-yellow);
+    width: 40%;
+    margin-top: 20%;
+    height: 60%;
+    position: absolute;
+    background-position-x: right;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 20% 0 0 40%;
+    filter: blur(200px) brightness(0.5);
 }
 
 .home__main {
@@ -173,6 +218,19 @@ p {
     width: 90%;
     height: 80%;
 }
+.about__team_img:hover,
+.about__contacts_img:hover {
+    animation: 0.7s infinite alternate image;
+}
+
+@keyframes image {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.05;
+    }
+}
 
 .blog__title_block {
     margin-top: 100px;
@@ -194,4 +252,34 @@ p {
     flex-direction: column;
     justify-content: center;
     height: 70vh;
+}
+
+.contacts__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 160px 0;
+}
+.contacts__link p{
+    color: var(--color-yellow);
+}
+.contacts__link_span{
+    color: var(--color-white);
+}
+.contacts__bottom_block{
+    display: flex;
+    justify-content: center;
+}
+
+.team__programmer{
+    display: flex;
+    justify-content: flex-end;
+}
+.team__designer{
+    display: flex;
+}
+.team__people_block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

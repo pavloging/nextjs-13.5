@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Home() {
     return (
-        <div className="home">
+        <div className="home page">
             <div className="home__main">
                 <Image
                     className="home__image_mouse"
